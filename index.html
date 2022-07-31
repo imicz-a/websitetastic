@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web developer and designer</title>
+    <style>
+        .navbar {
+        background-color: #78A1BB;
+        margin: 0;
+        left: 0px;
+        right: 0px;
+        overflow: hidden;
+        position: absolute;
+        width: auto;
+        top:0px;
+      }
+      
+      /* Style the links inside the navigation bar */
+      .navbar a {
+        float: left;
+        color: #283044;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 3vh;
+        font-family: Futura;
+      }
+      
+      /* Change the color of links on hover */
+      .navbar a:hover {
+        background-color: #EBF5EE;
+        color: #283044;
+      }
+      
+      /* Add a color to the active/current link */
+      .navbar a.active {
+        background-color: #283044;
+        color: #EBF5EE;
+      }
+      </style> 
+      <!-- navbar css -->
+      <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #EBF5EE;
+        }
+        .container{
+          width: clamp(100px, 100%, 1000px);
+          background-color: #283044;
+          padding: 2%;
+
+        }
+        .heroimage{
+          width: 50%;
+        }
+        h1{
+          font-family: Futura;
+          font-weight: bold;
+          color:#EBF5EE;
+          font-size: 48px;
+        }
+        h2{
+          font-family: Futura;
+          font-weight:normal;
+          color:#EBF5EE;
+          font-size: 31.25px;
+        }
+        p{
+          font-family: Futura;
+          font-weight:normal;
+          color:#EBF5EE;
+          font-size: 1rem;
+          text-decoration: none;
+        }
+        .herocenter{
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+        .hero{
+          display: flex;
+          margin-bottom: 10vh;
+          margin-top: 4vh;
+        }
+        .button{
+          background-color: #78A1BB;
+          color: #EBF5EE;
+          font-size: 15px;
+          text-decoration: none;
+          border:none;
+          width: fit-content;
+          border-radius: 5px;
+          padding: 10px;
+          font-family: Futura;
+        }
+        .button:hover{
+          background-color: #EBF5EE;
+          color: #78A1BB;
+          transition: 0.4s;
+        }
+        .portfolio div div:hover{
+          background-color: #78A1BB;
+          transition: 0.4s;
+        }
+        .convince{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .convince div{
+          width:70%;
+          display: flex;
+          gap: 10%;
+        }
+        .convince div img{
+          width: 40%;
+        }
+        .convince div div{
+          display: flex;
+            flex-direction: column;
+            width: 40%;
+          }
+          .portfolio{
+            text-align: center;
+          }
+          .portfolio div{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+          }
+          .portfolio div div{
+            display: flex;
+            flex-direction: column;
+            border-width: 5px;
+            border-color: #EBF5EE;
+            border-style: solid;
+            border-radius: 5px;
+            text-align: center;
+          }
+          .portfolio div div img{
+            width: 100%;
+            border-bottom-width: 5px;
+            border-bottom-color: #EBF5EE;
+            border-bottom-style: solid;
+          }
+        @media screen and (max-width:800px) {
+          .heroimage{
+            width: 100%;
+          }
+          .hero{
+            flex-direction:column-reverse;
+          }
+          .herocenter{
+            width: 100%;
+          }
+          .convince div img{
+          width: 100%;
+          }
+          .convince div{
+            flex-direction: column;
+          }
+          .convince div div{
+            width: 100%;            
+          }
+          #clear{
+            flex-direction: column-reverse;
+          }
+          #designed{
+            flex-direction: column-reverse;
+          }
+        }
+      </style>
+</head>
+<body>
+  <div class="container">
+    <div style="display:flex; gap:2%">
+      <img src="Websitetastic-3.png" style="width: 5%;">
+      <p>websitetastic</p>
+    </div>
+    <div class="hero">
+      <div class="herocenter">
+        <h1 class="herotitle">Beautiful websites, made by a professiolnal</h1>
+        <h2 style="color:#78A1BB;">Idealy siuted for your needs, fully customisable and crystal clear as a site should be</h2>
+        <a class="button">get one now!</a>
+      </div>
+      <img src="hero-correct.svg" class="heroimage">
+    </div>
+    <div class="convince">
+      <div class="polish">
+        <img src="polish.svg">
+        <div>
+          <h2>Simple, attractive websites that make a strong first impression.</h2>
+          <p>A polished and well-designed website is essential in making your business look professional and organized. If you plan to make a good first impression with new clients, this is the way to do it.</p>
+        </div>
+      </div>
+      <div id="clear">
+        <div>
+          <h2>websites that are crystal clear and user-friendly</h2>
+          <p>They use proper line spacing and paragraphs to guide the reader through the content, rather than packing everything into one large paragraph or writing everything as one large list.</p>
+        </div>
+        <img src="clear.svg">        
+      </div>
+      <div class="revenue">
+        <img src="revenue.svg">
+        <div>
+          <h2>Websites that help increase your revenue by tenfold. It is possible.</h2>
+          <p>Increase your revenue with easy to use websites that focus it. We have optimized our sites to increase your conversion rates, so you can get more customers, faster.</p>
+        </div>
+      </div>
+      <div id="designed">
+        <div>
+          <h2>Our websites are carefully designed, beautifully crafted and easy to use.</h2>
+          <p> We believe that designing is more than just a visual art. It's the expression of our thoughts, feelings, memories and ideas. Our designs are carefully considered using only the highest quality materials and attention to detail so that your website is beautifully crafted and matches your brand's personality.</p>
+        </div>
+        <img src="design.svg">        
+      </div>
+      <div class="mobile">
+        
+        <img src="mobile.svg">
+        <div>
+          <h2>Websites for mobile devices, including smartphones and tablets.</h2>
+          <p> A responsive website is a mobile-friendly website which responds to the screen size. Such a website automatically adjusts the content, layout and styling of its web pages based on the device used to access it.</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="portfolio">
+      <h1>See our portfolio!</h2>
+      <h2>business/personal websites</h2>
+      <div>
+        <a style="" href="https://google.com"><div>
+          <img src="{% static 'this.png'%}">
+          <p>this website</p>
+        </div></a>
+      </div>
+    </div> -->
+    <div class="getitnow" style="margin-top: 10vh; display:flex; justify-content: center;">
+      <a class="button">Get your website ready now!</a>
+    </div>
+  </div>
+</body>
+</html>
